@@ -1,0 +1,7 @@
+ <div className="info-row"><SettingsBrightness id="icn"/> <h2>Temperature: {(result.main.temp- 273.15).toFixed(2)}<span>&#176;</span></h2><h2></h2></div>
+        <div className="info-row"><Opacity id="icn"/><h2>Humidity: {result.main.humidity}</h2></div>
+        <div className="info-row"><Brightness5 id="icn"/> <h2>Sun Rise: {new Date(result.sys.sunrise * 1000).toLocaleTimeString()}</h2></div>
+        <div className="info-row"><Brightness6 id="icn"/> <h2>Sun Set: {new Date(result.sys.sunset * 1000).toLocaleTimeString()}</h2></div>
+        <div className="info-row"><Dehaze id="icn" />  <h2>Sky: {result.weather[0].main}</h2></div>
+        <div className="info-row"><Cloud id="icn"/> <h2>Clouds: {result.clouds.all}%</h2></div>
+           
